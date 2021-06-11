@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* 
+.login{width:100%; min-height:220px; height:auto; position:absolute; left:50%; top:17%; margin-left:-220px;}
+.login-container{width:440px; min-height:220px; height:auto;}
+.login-container .content{width:340px; min-height:180px; height:auto; padding:25px 50px 30px 50px; margin-top:15px;border-color:#e2e2e2; border-radius:8px; background:#FFFFFF;}
+ */
+.login-bg{position:relative; height:100%; background:url(../image/bg-login.jpg) no-repeat; background-size:100% 100%; animation:login-show 3s ease-in-out 0s 1 both;}
+
+@keyframes login-show {0%{transform:scale(2,2);}100%{transform:scale(1,1);}}
+@-webkit-animation login-show {0%{transform:scale(2,2);}100%{transform:scale(1,1);}}
+
+.login{width:100%; min-height:700px;}
+.loginContent{width:850px; height:100%; margin:0 auto;}
+.loginContent .loginDiv{width:340px; min-height:180px; height:auto; border:dashed 1px #fefefe; padding:25px 50px 30px 50px; margin-top:15px;border-color:#e2e2e2; border-radius:8px; background:#FFFFFF;  animation:loginDiv-show 1.5s ease-in-out 0s 1 both;}
+
+.login-leftPic{width:350px; height:330px; position:relative; background:url(../image/login.jpg) no-repeat; animation:login-leftPic 1.5s ease-in-out 0s 1 both;}
+
+.regist-leftDiv{float:left; width:300px; height:700px; padding-top:25px; letter-spacing:1px; position:relative; animation:regist-leftDiv 1.5s ease-in-out 0s 1 both;}
+.regist-rightDiv{float:right; width:340px; min-height:220px; background:#fff; border:dashed 1px #fefefe; padding:25px 50px 30px 50px; margin-top:15px;border-color:#e2e2e2; border-radius:8px; background:#FFFFFF; animation:loginDiv-show 1.5s ease-in-out 0s 1 both;}
+
+@keyframes login-leftPic {0%{left:-100px;}100%{left:0px;}}
+@-webkit-animation login-leftPic {0%{left:-100px;}100%{left:0px;}}
+
+@keyframes regist-leftDiv {0%{left:-100px;}100%{left:0px;}}
+@-webkit-animation regist-leftDiv {0%{left:-100px;}100%{left:0px;}}
+
+@keyframes loginDiv-show {0%{transform:scale(0.5,0.5);}100%{transform:scale(1,1);}}
+@-webkit-animation loginDiv-show {0%{transform:scale(0.5,0.5);}100%{transform:scale(1,1);}}
+
+.regist{width:100%; min-height:900px;}
+.registContent{width:850px; height:100%; margin:0 auto;}
+.registContent .registDiv{width:340px; min-height:180px; height:auto; border:dashed 1px #fefefe; padding:25px 50px 30px 50px; margin-top:15px;border-color:#e2e2e2; border-radius:8px; background:#FFFFFF; animation:loginDiv-show 1.5s ease-in-out 0s 1 both;}
+
+/* 半透明背景 */
+.layout-shadow{width:100%; height:100%; position:fixed; z-index:1000; background:#000000; top:0px; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5;}
+
+/* 所有弹出框的最外层 */
+.layout{width:100%; min-height:200px; height:auto; position:fixed; top:20%; z-index:1001;}
+
+/* 所有弹出层的标题 */
+.layout-title{width:100%; height:40px; line-height:40px; border-bottom:1px solid #d5d5d5; font-size:14px;}
+.layout-title .tip{float:left; width:3px; height:18px; margin-left:15px; margin-top:12px; background:#DA3410;}
+.layout-title .txt{float:left; min-width:100px; margin-left:10px; color:#666666; font-size:16px; letter-spacing:2px;}
+.layout-title .close{float:right; width:30px; height:30px; margin-right:15px; font-size:12px; cursor:pointer;}
